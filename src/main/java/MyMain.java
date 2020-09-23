@@ -6,30 +6,55 @@ public class MyMain {
     // If the char is not an uppercase letter, 
     // it is returned unchanged. 
     public static char toLower(char ch) {
-        // REPLACE WITH YOUR CODE
-        return '!';
+        if (65 <= ch && ch <= 90){
+            ch = (char)((ch)+32);
+        else {
+            ch = (ch);
+        }
+            return ch;
+        }
     }
 
     // Returns a copy of a String, where all letters 
     // are now lowercase
     public static String myToLowerCase(String str) {
-        // REPLACE WITH YOUR CODE
-        return "";
+        String a = "";
+        for (int i = 0; i<str.length(); i++){
+            char b = str.charAt(i);
+            if(65 <= b && b <=90){
+                b = (char)((wer)+32);
+            }
+            a = a + b;
+        }
+        return(a);
     }
 
     // Changes a lowercase letter to an uppercase letter
     // If the char is not an lowercase letter, 
     // it is returned unchanged. 
     public static char toUpper(char ch) {
-        // REPLACE WITH YOUR CODE HERE
-        return '!';
+        if (97 <= ch && ch <= 122){
+            ch = (char)((ch)-32);
+            return (ch);
+        }
+        else {
+            ch = (ch);
+            return (ch);
+        }
     }
 
     // Returns a copy of a String, where all letters 
     // are now uppercase
     public static String myToUpperCase(String str) {
-        // REPLACE WITH YOUR CODE HERE
-        return "";
+        String c = ""
+        for (int i = 0; i < str.length(); i++){
+            char d = str.charAt(i);
+            if (97 <= d && d <= 122){
+                d = (char)((d)-32);
+            }
+            c = c + d;
+        }
+        return (c);
     }
 
 
