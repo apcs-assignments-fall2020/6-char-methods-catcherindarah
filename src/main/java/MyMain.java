@@ -8,11 +8,11 @@ public class MyMain {
     public static char toLower(char ch) {
         if (65 <= ch && ch <= 90){
             ch = (char)((ch)+32);
+        }
         else {
             ch = (ch);
         }
-            return ch;
-        }
+        return ch;
     }
 
     // Returns a copy of a String, where all letters 
@@ -22,7 +22,7 @@ public class MyMain {
         for (int i = 0; i<str.length(); i++){
             char b = str.charAt(i);
             if(65 <= b && b <=90){
-                b = (char)((wer)+32);
+                b = (char)((b)+32);
             }
             a = a + b;
         }
@@ -46,7 +46,7 @@ public class MyMain {
     // Returns a copy of a String, where all letters 
     // are now uppercase
     public static String myToUpperCase(String str) {
-        String c = ""
+        String c = "";
         for (int i = 0; i < str.length(); i++){
             char d = str.charAt(i);
             if (97 <= d && d <= 122){
